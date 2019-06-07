@@ -1,0 +1,139 @@
+<!Doctype HTNL>
+<html>
+<head>
+<title>Carpet cleanning</title>
+</head>
+<style>
+ header{
+ background: #7c0736;
+ width: 100%;
+ height: 260px;
+ }
+ 
+ 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 401px)
+ {
+ body{
+ background: #dbd9d9;
+ }
+ header{
+ background: #7c0736;
+ width: 100%;
+ height: 320px;
+ }
+ header .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 90px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 100px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+ #menu-btn{
+ width: 140px;
+ height: 140px;
+ margin-left: 4%;
+ margin-top: 6%;
+ }
+  h1{
+ font-family: Baloo;
+ font-size: 110px;
+text-align: center;
+margin: 0;
+ margin-top: 6%;
+ color: #7c0736;
+ }
+ #content-bg{
+ background: black;
+ width: 100%;
+ height: 1000px;
+ }
+
+ #content-bg #img1{
+ background: #7c0736;
+ width: 90%;
+ margin-left: 5%;
+ height: 800px;
+ margin-top: 5%;
+ }
+ #request-btn{
+ margin-left: 25%;
+ margin-top: 6%;
+ }
+
+}
+</style>
+<body>
+<header>
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="takkies.html">Takkie wash</a>
+  <a href="carpet.html">Carpet cleanning</a>
+  <a href="food.html">Food services</a>
+   <a href="#">Donations</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+   <span style="font-size:120px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+</header>
+<h1>Carpet cleanning</h1>
+<div id='content-bg'>
+  <br>
+  <div id='img1'>
+     
+  </div>
+</div>
+     <a href='#'><img id='request-btn' src='root/request-btn.png'/></a>
+	 
+
+</body>
+</html>

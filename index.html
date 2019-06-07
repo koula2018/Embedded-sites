@@ -1,0 +1,287 @@
+<!Doctype HTNL>
+<html>
+<head>
+<title>Madida Food</title>
+</head>
+<style>
+ header{
+ background: #7c0736;
+ width: 100%;
+ height: 260px;
+ }
+ 
+ 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 499px)
+ {
+ body{
+ background: url('root/header.png')no-repeat;
+ background-size: cover;
+ }
+ header{
+ background: url('root/header.png')no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 320px;
+ }
+ header .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: url('root/takkies1.png')no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 90px;
+  color: #7c0736;
+  display: block;
+  transition: 0.3s;
+  margin-top: 9%;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 100px;
+  margin-left: 50px;
+  color: #dbd9d9;
+  background: #7c0736;
+
+  height: 90px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  color: #dbd9d9;
+}
+
+  h1{
+ font-family: Baloo;
+ font-size: 110px;
+ margin-left: 17%;
+ margin-top: 6%;
+ color: #7c0736;
+ }
+ #content-bg{
+ background: url('root/takkies.png')no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 980px;
+ }
+
+ .accordion {
+  background-color: #0ea1b7;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  height: 200px;
+  border-bottom: 4px solid #02515d;
+  text-align: left;
+  outline: none;
+  font-size: 75px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #161616;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+.panel p{
+font-size: 50px;
+}
+.panel #div1{
+border-bottom: 1px solid black;  
+height: 420px; 
+width: 90%;
+margin-left: 5%;
+
+}
+.panel #div2{
+background: #dbd9d9; 
+height: 420px; 
+width: 90%;
+margin-left: 5%;
+}
+.panel #div3{
+background: black; 
+height: 420px; 
+width: 90%;
+margin-left: 5%;
+
+}
+.panel #div4{
+background: black; 
+height: 420px; 
+width: 90%;
+margin-left: 5%;
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 500px) 
+  and (max-device-width: 800px){
+  .panel #div1{
+background: black; 
+height: 420px; 
+width: 380px;
+margin-left: 2%;
+}
+.panel #div2{
+background: black; 
+height: 420px; 
+width: 380px;
+margin-left: 56%;
+margin-top: -45%;
+}
+.panel #div3{
+background: black; 
+height: 920px; 
+width: 380px;
+margin-left: 2%;
+}
+.panel #div4{
+background: black; 
+height: 420px; 
+width: 380px;
+margin-left: 56%;
+margin-top: -45%;
+}
+
+  }
+</style>
+<body>
+<header>
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="takkies.html">Takkie wash</a>
+  <hr>
+  <a href="carpet.html">Carpet cleanning</a>
+  <hr>
+  <a href="food.html">Food services</a>
+  <hr>
+   <a href="#">Donations</a>
+   <hr>
+  <a href="contact.html">Contact</a>
+  <hr>
+</div>
+
+<div id="main">
+   <span style="font-size:120px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+</header>
+
+<div id=''></div>
+<div id='content-bg'></div>
+<h1>Our services</h1>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       
+	   <div id='div1'>
+	        <div style='height: 100%; width: 50%;'><img src='root/koula code academy logo.png' style='width: 100%; height: 100%;'/>
+			    <h4 style='margin-top: -35%; font-size: 108px; margin-left: 99%;'>header</h4>
+			</div>
+	   </div>
+		<br>
+		<br>
+		<div id='div2'>
+		   <div style='height: 100%; width: 50%;'><img src='root/koula code academy logo.png' style='width: 100%; height: 100%;'/></div>
+		</div>
+		<br>
+		<br>
+		<div id='div3'>
+		   <div style='height: 100%; width: 100%;'><img src='root/mell.png' style='width: 100%; height: 100%;'/></div>		
+		</div>
+		<br>
+		<br>
+		<div id='div4'></div>
+		<br>
+		<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      		
+  </div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           <div id='div1'></div>  
+		<div id='div2'></div>
+		<div id='div3'></div>
+		<div id='div4'></div>
+		<br>
+  </div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div id='div1'></div>
+		<div id='div2'></div>
+		<br>
+		<br>
+		<div id='div3'></div>
+		<div id='div4'></div>
+		<br>
+		<br>
+  </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
